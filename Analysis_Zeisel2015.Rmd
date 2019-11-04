@@ -63,6 +63,7 @@ We can use scater package to automatically calculate several quality metrics per
 ```{r}
 sce <- calculateQCMetrics(sce,  feature_controls=list(Spike=is.spike, Mt=is.mito))
 colnames(colData(sce))
+colnames(rowData(sce))
 ```
 
 ### Quality metrics per cell
